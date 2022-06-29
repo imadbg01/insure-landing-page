@@ -20,11 +20,13 @@
     <script src="./js/script.js" defer></script>
   </head>
   <body>
+    <!-- =============== -->
     <header class="primary-header container flex">
+      <a href="#main-content" class="skip-to-content">skip to content</a>
       <div>
         <img src="./assets/images/logo.svg" alt="Insure logo " />
       </div>
-
+      <!-- ============= -->
       <nav>
         <button
           class="mobile-navigation-toggle"
@@ -39,7 +41,7 @@
           id="navigation"
           data-visible="false"
         >
-          <li><a href="#work">How we work</a></li>
+          <li><a href="#features">How we work</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#"> Account</a></li>
           <li><a href="#" class="cta">View plans</a></li>
@@ -63,7 +65,7 @@
           <div class="hero-image">
             <img
               src="./assets/images/image-intro-desktop.jpg"
-              alt="Ensure you and your loved ones are protected."
+              alt="four people of a family holding each other hands"
             />
           </div>
         </div>
@@ -71,14 +73,18 @@
 
       <!-- how we work section -->
 
-      <section id="work">
+      <section id="features">
         <div class="container work">
           <h2>We’re different</h2>
 
           <div class="flex work-boxes">
             <!-- [1] -->
             <div class="work-box">
-              <img src="./assets/images/icon-snappy-process.svg" alt="" />
+              <img
+                src="./assets/images/icon-snappy-process.svg"
+                alt=""
+                aria-hidden="true"
+              />
               <h3>Snappy Process</h3>
               <p>
                 Our application process can be completed in minutes, not hours.
@@ -87,7 +93,11 @@
             </div>
             <!-- [2] -->
             <div class="work-box">
-              <img src="./assets/images/icon-affordable-prices.svg" alt="" />
+              <img
+                src="./assets/images/icon-affordable-prices.svg"
+                alt=""
+                aria-hidden="true"
+              />
               <h3>Affordable Prices</h3>
               <p>
                 We don’t want you worrying about high monthly costs. Our prices
@@ -96,7 +106,11 @@
             </div>
             <!-- [3] -->
             <div class="work-box">
-              <img src="./assets/images/icon-people-first.svg" alt="" />
+              <img
+                src="./assets/images/icon-people-first.svg"
+                alt=""
+                aria-hidden="true"
+              />
               <h3>People First</h3>
               <p>
                 Our plans aren’t full of conditions and clauses to prevent
@@ -121,49 +135,67 @@
       <!--  -->
     </main>
 
-    <div class="footer-content">
-      <div class="secondary-header container flex">
-        <div>
-          <img src="./assets/images/logo.svg" alt=" Insure logo" />
-        </div>
-        <div class="social-media-icons flex">
-          <a href="#">
-            <span class="sr-only">facebook</span>
-            <img
-              src="./assets/images/icon-facebook.svg"
-              alt=""
-              aria-hidden="true"
-            />
-          </a>
-          <a href="#">
-            <span class="sr-only">twitter</span>
-            <img
-              src="./assets/images/icon-twitter.svg"
-              alt=""
-              aria-hidden="true"
-            />
-          </a>
-          <a href="#">
-            <span class="sr-only">instagram</span>
-            <img
-              src="./assets/images/icon-instagram.svg"
-              alt=""
-              aria-hidden="true"
-            />
-          </a>
-          <a href="#">
-            <span class="sr-only">pinterest</span>
-            <img
-              src="./assets/images/icon-pinterest.svg"
-              alt=""
-              aria-hidden="true"
-            />
-          </a>
-        </div>
-      </div>
+    <footer>
+      <nav aria-label="secondary navigation">
+        <div class="secondary-header container flex">
+          <div>
+            <img src="./assets/images/logo.svg" alt=" Insure logo" />
+          </div>
+          <div class="social-media-icons flex">
+            <a
+              href="https://www.facebook.com/imadbg01"
+              aria-label="Visit our facebook "
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                src="./assets/images/icon-facebook.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </a>
+            <a
+              href="https://twitter.com/ImadBg4"
+              aria-label="Visit our twitter "
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                src="./assets/images/icon-twitter.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </a>
 
-      <footer class="container">
-        <nav class="footer-nav flex" aria-label="secondary">
+            <a
+              href="https://www.instagram.com/imadbg101/"
+              aria-label="Visit our instagram "
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                src="./assets/images/icon-instagram.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </a>
+
+            <a
+              href="https://www.pinterest.com/imadbg101"
+              aria-label="Visit our pinterest "
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                src="./assets/images/icon-pinterest.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-nav flex container" aria-label="secondary">
           <div>
             <a href="#">Our company</a>
             <ul>
@@ -200,9 +232,9 @@
               <li>Licenses</li>
             </ul>
           </div>
-        </nav>
-      </footer>
-    </div>
+        </div>
+      </nav>
+    </footer>
 
     <div class="attribution">
       <p>
