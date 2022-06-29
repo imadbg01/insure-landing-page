@@ -98,6 +98,11 @@ h5 {
   padding-block: 1.6rem;
 }
 
+.primary-navigation {
+  --gap: 3rem;
+  font-size: 1.1rem;
+}
+
 .cta {
   padding: 0.6em 1.1em;
   border: 1px solid var(--VeryDarkViolet);
@@ -284,11 +289,17 @@ h5 {
 }
 
 .footer {
-  justify-content: space-between;
   padding-block: 2rem;
 }
 
-.footer > ul {
+.footer-nav {
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.footer-nav div,
+.footer-nav ul {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -370,10 +381,6 @@ h5 {
     position: absolute;
     padding-block: clamp(2rem, 2vw + 1rem, 2.5rem);
     inset: 4rem 0 0 0;
-    /* top: 3rem;
-    left: 0;
-    bottom: 0;
-    right: 0; */
     background-color: var(--VeryDarkViolet);
     z-index: 11111;
     flex-direction: column;
@@ -504,9 +511,6 @@ h5 {
 
   /* find more */
 
-  /* .find-more {
-  } */
-
   .find-more div {
     padding: 4.4rem 1.3rem;
     flex-direction: column;
@@ -535,7 +539,7 @@ h5 {
     background-position: left top;
   }
 
-  .footer {
+  .footer-nav {
     flex-direction: column;
     gap: 1.5rem;
   }
